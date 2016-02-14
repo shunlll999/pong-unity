@@ -1,0 +1,17 @@
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/obj/Debug/Assembly-CSharp.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/UnityEngine.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/UnityEditor.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Mono.Cecil.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Unity.DataContract.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/wach/Documents/WORKS/UnityProjects/Pong/PongGame/Temp/bin/Debug/Mono.Cecil.Mdb.dll
