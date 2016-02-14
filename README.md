@@ -7,6 +7,7 @@ how to work with git
 - git add .
 - git commit -a “some happened”
 - git push -u origin master
+
  
  if want to update data from origin must be use git pull from repository first
 - git pull -a origin master
