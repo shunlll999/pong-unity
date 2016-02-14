@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour {
 	public float ballSpeed = 30;
 
 	void Start(){
-		StartCom();
+		//StartCom();
 	}
 
 	public void StartCom(){
