@@ -10,10 +10,10 @@ public class GameManager : MonoBehaviour {
 	}
 	private static GameManager 		_instance;
 
-	public 			UserData 				userData;
+	public 			UserData 			userData;
 	public 			List<UserData>		clientsList;
-	public 			bool						controlAvariabe = false;
-	public			Player					player;
+	public 			bool				controlAvariabe = false;
+	public			Player				player;
 
 	public static GameManager Instance{
 		get{

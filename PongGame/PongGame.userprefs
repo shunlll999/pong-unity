@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.AndroidPlayer" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SigninController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveRacket.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="14" Column="34" />
-      <File FileName="Assets/Scripts/Ball.cs" Line="9" Column="14" />
-      <File FileName="Assets/Scripts/MoveRacket.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MoveRacket.cs" Line="29" Column="56" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="100" Column="4" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="9" Column="5" />
       <File FileName="Assets/Scripts/SigninController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/NetworkManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Converter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Converter.cs" Line="25" Column="2" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

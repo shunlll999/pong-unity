@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour {
 			NetworkManager.Instance.Socket.On("USER_CONNECTED", OnUserConnected);
 			NetworkManager.Instance.Socket.On("USER_DISCONNECTED", OnUserDisconnected);
 			NetworkManager.Instance.Socket.On("PLAY_AVARIABLE", OnPlayAvariable );
+			NetworkManager.Instance.Socket.On("RACKET_MOVE", OnRecketEnemyMove );
 			StartCoroutine("RequestPlay");
 		}else{
 			SceneManager.LoadScene("SignIn");
@@ -88,6 +89,24 @@ public class GameController : MonoBehaviour {
 		_usersData.Add(usrdata);
 
 		Debug.Log("Counter User : "+_usersData.Count);
+	}
+
+	private void OnRecketEnemyMove(SocketIOEvent evt ){
+
+		if( GameManager.Instance.player == GameManager.Player.player1 ){
+			racketPlayer2.FromBoradcastVelocity(Converter.JsonToVecter2(Converter.JsonToString(evt.data.GetField("position").ToString())));
+		}else if( GameManager.Instance.player == GameManager.Player.player2 ){
+			racketPlayer1.FromBoradcastVelocity(Converter.JsonToVecter2(Converter.JsonToString(evt.data.GetField("position").ToString())));
+		}
+
+	}
+
+	void Update () {
+		if( GameManager.Instance.player == GameManager.Player.player1 ){
+			racketPlayer1.Move();
+		}else if( GameManager.Instance.player == GameManager.Player.player2 ){
+			racketPlayer2.Move();
+		}
 	}
 		
 }

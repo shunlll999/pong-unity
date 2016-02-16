@@ -22,4 +22,24 @@ public class Converter {
 
 	}
 
+	public static Vector2 JsonToVecter2(string target ){
+
+		Vector2 newVector;
+		string[] newString = Regex.Split(target,",");
+		newVector = new Vector2( float.Parse(newString[0]), float.Parse(newString[1]));
+
+		return newVector;
+
+	}
+
+	public static float JsonToFloat(string target ){
+
+		float newFloat = 0;
+		string[] newString = Regex.Split(target,"\"");
+		newFloat = float.Parse(newString[1]);
+
+		return newFloat;
+
+	}
+
 }
