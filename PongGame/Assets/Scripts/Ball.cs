@@ -7,6 +7,13 @@ public class Ball : MonoBehaviour {
 
 	void Start(){
 		//StartCom();
+		NetworkManager.Instance.Socket.On("READY", OnReadyPlay );
+	}
+
+	private void OnReadyPlay(SocketIO.SocketIOEvent evt ){
+
+		Debug.Log("READY TO PLAY");
+
 	}
 
 	public void StartCom(){

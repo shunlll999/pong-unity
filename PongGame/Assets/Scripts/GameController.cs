@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour {
 			NetworkManager.Instance.Socket.On("USER_DISCONNECTED", OnUserDisconnected);
 			NetworkManager.Instance.Socket.On("PLAY_AVARIABLE", OnPlayAvariable );
 			NetworkManager.Instance.Socket.On("RACKET_MOVE", OnRecketEnemyMove );
+
 			StartCoroutine("RequestPlay");
 		}else{
 			SceneManager.LoadScene("SignIn");
@@ -43,10 +44,16 @@ public class GameController : MonoBehaviour {
 		if( GameManager.Instance.userData.ID == player1.ID ){
 			Debug.Log("Player1 Ready!!");
 			GameManager.Instance.player = GameManager.Player.player1;
+			Dictionary<string, string> ready = new Dictionary<string, string>();
+			ready["id"] = player1.ID;
+			NetworkManager.Instance.Socket.Emit("READY", new JSONObject( ready ));
 		}else{
 			if( GameManager.Instance.userData.ID == player2.ID ){
 				Debug.Log("Player2 Ready!!");
 				GameManager.Instance.player = GameManager.Player.player2;
+				Dictionary<string, string> ready = new Dictionary<string, string>();
+				ready["id"] = player2.ID;
+				NetworkManager.Instance.Socket.Emit("READY", new JSONObject( ready ));
 			}else{
 				Debug.Log("JUST WATCH!!");
 				GameManager.Instance.player = GameManager.Player.guest;
