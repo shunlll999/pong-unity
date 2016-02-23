@@ -44,16 +44,17 @@ public class GameController : MonoBehaviour {
 		if( GameManager.Instance.userData.ID == player1.ID ){
 			Debug.Log("Player1 Ready!!");
 			GameManager.Instance.player = GameManager.Player.player1;
-			Dictionary<string, string> ready = new Dictionary<string, string>();
-			ready["id"] = player1.ID;
-			NetworkManager.Instance.Socket.Emit("READY", new JSONObject( ready ));
+
+			JSONObject ready = new JSONObject();
+			ready.AddField("id", player1.ID );
+			NetworkManager.Instance.Socket.Emit("READY", ready);
 		}else{
 			if( GameManager.Instance.userData.ID == player2.ID ){
 				Debug.Log("Player2 Ready!!");
 				GameManager.Instance.player = GameManager.Player.player2;
-				Dictionary<string, string> ready = new Dictionary<string, string>();
-				ready["id"] = player2.ID;
-				NetworkManager.Instance.Socket.Emit("READY", new JSONObject( ready ));
+				JSONObject ready = new JSONObject();
+				ready.AddField("id", player1.ID );
+				NetworkManager.Instance.Socket.Emit("READY", ready);
 			}else{
 				Debug.Log("JUST WATCH!!");
 				GameManager.Instance.player = GameManager.Player.guest;
@@ -76,6 +77,8 @@ public class GameController : MonoBehaviour {
 
 		return usr;
 	}
+
+
 
 	private void OnUserDisconnected(SocketIOEvent evt ){
 
